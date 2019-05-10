@@ -2,6 +2,16 @@ $color-1: #89c3ff;
 $color-2: #fff;
 $color-3: #222533;
 
+$color-4: #ffa500;
+$color-5: #ff7600;
+$color-5: #ff7979;
+$color-6: #ad0909;
+$color-7: #a4ea86;
+$color-8: #444;
+$color-9: #17d8c6;
+$color-10: #f73737;
+$color-11: #0be042;
+
 * {
     padding: 0;
     margin: 0;
@@ -66,5 +76,31 @@ body {
         &-20 {
             border-radius: 20px;
         }
+    }
+}
+.bg-color {
+    &-1 {
+        background-color: $color-4;
+    }
+    &-2 {
+        background-color: $color-5;
+    }
+    &-3 {
+        background-color: $color-6;
+    }
+    &-4 {
+        background-color: $color-7;
+    }
+    &-5 {
+        background-color: $color-8;
+    }
+    &-6 {
+        background-color: $color-9;
+    }
+    &-7 {
+        background-color: $color-10;
+    }
+    &-8 {
+        background-color: $color-11;
     }
 }
