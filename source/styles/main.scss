@@ -1,7 +1,19 @@
+@import 'reset';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+$font-1: 'Lato', sans-serif;
+
 $color-1: #89C3FF;
 $color-2: #FFFFFF;
 $color-3: #222533;
-
 $color-4: #FFA500;
 $color-5: #FF7600;
 $color-5: #FF7979;
@@ -11,19 +23,6 @@ $color-8: #444444;
 $color-9: #17D8C6;
 $color-10: #F73737;
 $color-11: #0BE042;
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    padding-top: 50px;
-    padding-left: 50px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
 
 .row {
     display: flex;
