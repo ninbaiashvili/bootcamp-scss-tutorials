@@ -1,114 +1,133 @@
-$color-1: #89c3ff;
-$color-2: #fff;
+$color-1: #89C3FF;
+$color-2: #FFFFFF;
 $color-3: #222533;
 
-$color-4: #ffa500;
-$color-5: #ff7600;
-$color-5: #ff7979;
-$color-6: #ad0909;
-$color-7: #a4ea86;
-$color-8: #444;
-$color-9: #17d8c6;
-$color-10: #f73737;
-$color-11: #0be042;
+$color-4: #FFA500;
+$color-5: #FF7600;
+$color-5: #FF7979;
+$color-6: #AD0909;
+$color-7: #A4EA86;
+$color-8: #444444;
+$color-9: #17D8C6;
+$color-10: #F73737;
+$color-11: #0BE042;
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     padding-top: 50px;
     padding-left: 50px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
+
 .row {
     display: flex;
     align-items: flex-end;
 
     .btn {
         margin-right: 30px;
+        padding: 11px 37px;
+        border: 0;
+        background: $color-1;
+        color: $color-2;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-3;
+        }
 
         &:last-child {
             margin-right: 0;
         }
-    }
-}
-.btn {
-    text-decoration: none;
-    background: $color-1;
-    padding: 11px 37px;
-    color: $color-2;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 14px;
-    border: 0;
-    cursor: pointer;
 
-    &:hover {
-        background-color: $color-3;
-    }
+        &.medium {
+            padding: 14px 47px;
+            font-size: 18px;
+        }
 
-    &.medium {
-        font-size: 18px;
-        padding: 14px 47px;
-    }
-    &.large {
-        font-size: 26px;
-        padding: 24px 94px;
-    }
-    &.x-large {
-        font-size: 36px;
-        padding: 27p8 102px;
-    }
-    &.round {
-        &-3 {
-            border-radius: 3px;
+        &.large {
+            padding: 24px 94px;
+            font-size: 26px;
         }
-        &-7 {
-            border-radius: 7px;
+
+        &.x-large {
+            padding: 27px 102px;
+            font-size: 36px;
         }
-        &-12 {
-            border-radius: 12px;
-        }
-        &-20 {
-            border-radius: 20px;
+
+        &.round {
+
+            &-3 {
+                border-radius: 3px;
+            }
+
+            &-7 {
+                border-radius: 7px;
+            }
+
+            &-12 {
+                border-radius: 12px;
+            }
+
+            &-20 {
+                border-radius: 20px;
+            }
         }
     }
 }
+
 .bg-color {
+
     &-1 {
         background-color: $color-1;
     }
+
     &-2 {
         background-color: $color-2;
     }
+
     &-3 {
         background-color: $color-3;
     }
+
     &-4 {
         background-color: $color-4;
     }
+
     &-5 {
         background-color: $color-5;
     }
+
     &-6 {
         background-color: $color-6;
     }
+
     &-7 {
         background-color: $color-7;
     }
+
     &-8 {
         background-color: $color-8;
     }
+
     &-9 {
         background-color: $color-9;
     }
+
     &-10 {
         background-color: $color-10;
     }
+
     &-11 {
         background-color: $color-11;
     }
