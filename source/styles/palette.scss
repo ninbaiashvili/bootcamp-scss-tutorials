@@ -3,10 +3,16 @@ $color-2: #FFFFFF;
 $color-3: #222533;
 $color-4: #FFA500;
 $color-5: #FF7600;
-$color-5: #FF7979;
-$color-6: #AD0909;
-$color-7: #A4EA86;
-$color-8: #444444;
-$color-9: #17D8C6;
-$color-10: #F73737;
-$color-11: #0BE042;
+$color-6: #FF7979;
+$color-7: #AD0909;
+$color-8: #A4EA86;
+$color-9: #444444;
+$color-10: #17D8C6;
+$color-11: #F73737;
+$color-12: #0BE042;
+
+$palette: (1: #89C3FF,2: #FFFFFF,3: #222533,4: #FFA500,5: #FF7600,6: #FF7979,7: #AD0909,8: #A4EA86,9: #444444,10: #17D8C6,11: #F73737,12: #0BE042);
+
+@function color($ind) {
+    @return map-get($palette, $ind);
+}
