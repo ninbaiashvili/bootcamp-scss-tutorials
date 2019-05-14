@@ -30,13 +30,21 @@
     }
 
     &.round {
-
         $corners: 3, 7, 12, 20;
 
         @each $corner in $corners {
 
             &-#{$corner} {
                 border-radius: $corner+px;
+            }
+        }
+    }
+
+    &.bg-color {
+        @each $ind, $color in $palette {
+
+            &-#{$ind} {
+                background-color: $color;
             }
         }
     }
@@ -52,15 +60,5 @@
 
     &:last-child {
         margin-right: 0;
-    }
-}
-
-.bg-color {
-
-    @each $ind, $color in $palette {
-
-        &-#{$ind} {
-            background-color: $color;
-        }
     }
 }
